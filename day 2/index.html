@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fafafa;
+      }
+
+      .main {
+        background-color: #f0f0f0;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 900px;
+        margin: 30px auto;
+      }
+
+      button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .card-icon {
+        border-radius: 8px;
+        padding: 10px 20px;
+        width: 170px;
+        margin: 20px auto;
+        background-color: #1870028e;
+        color: white;
+        text-align: center;
+      }
+
+      .social-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+    </style>
+
+    <title>Personal Website</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <!-- Header -->
+      <div class="line-spacing text-center">
+        <h1 class="fw-bold">Hi, Welcome to my Personal Website</h1>
+        <h2>This is my first webpage created from scratch!</h2>
+      </div>
+
+      <!-- Introduction -->
+      <div class="line mt-4">
+        <h3 class="fw-bold">Hello World</h3>
+        <p>
+          My name is Rama Cahaya Yudhoyono. I am excited to learn web
+          development and create more. I graduated from Information System at
+          Gunadarma University. I am looking forward to building amazing
+          websites and applications. I want to be a full stack developer.
+        </p>
+      </div>
+
+      <!-- Contact Button -->
+      <button type="button" title="contact">Contact</button>
+
+      <!-- Download CV -->
+      <div class="card-icon">
+        <a
+          href="https://drive.google.com/file/d/1ChReE5r8YQfISpYTkbySNUa7kEecIiNJ/view?usp=sharing"
+          style="color: white; text-decoration: none"
+        >
+          <p>
+            Download CV
+            <i
+              class="fa-solid fa-download fa-beat-fade"
+              style="color: white"
+            ></i>
+          </p>
+        </a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a
+          href="https://github.com/Ramayudhoo/Ramayudhoo"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: inherit; text-decoration: none"
+        >
+          <i class="bi bi-github" style="font-size: 45px"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/m/in/ramayudhoo/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: inherit; text-decoration: none"
+        >
+          <i class="bi bi-linkedin" style="font-size: 45px"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/ramayudhoo"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: inherit; text-decoration: none"
+        >
+          <i class="bi bi-instagram" style="font-size: 45px"></i>
+        </a>
+
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: inherit; text-decoration: none"
+        >
+          <i class="bi bi-facebook" style="font-size: 45px"></i>
+        </a>
+      </div>
+
+      <!-- Foto Diri -->
+      <div class="d-flex justify-content-center mt-4 mb-4">
+        <div class="card" style="width: 18rem">
+          <img src="../tampan dan pemberani.jpeg" alt="foto diri" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
