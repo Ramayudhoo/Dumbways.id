@@ -79,20 +79,45 @@
         justify-content: center;
         gap: 30px;
       }
-
-      .foto-diri img {
-        width: 300px;
-        height: 400px;
-        margin-top: 30px;
-        border-radius: 10%;
-        object-fit: cover;
-      }
     </style>
 
     <title>Personal Website</title>
   </head>
 
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="main">
       <!-- Header -->
       <div class="line-spacing text-center">
@@ -170,9 +195,20 @@
       </div>
 
       <!-- Foto Diri -->
-      <div class="foto-diri d-flex justify-content-center">
-        <img src="../tampan dan pemberani.jpeg" alt="foto diri" />
+      <div class="d-flex justify-content-center mt-4 mb-4">
+        <div class="card" style="width: 18rem">
+          <img src="../tampan dan pemberani.jpeg" alt="foto diri" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
