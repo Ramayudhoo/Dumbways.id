@@ -91,6 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // RENDER
   function renderProjects(list = projects) {
+    // Jika tidak ada project, tampilkan pesan
+    if (list.length === 0) {
+      CardsContainer.innerHTML = `<div class="col-12"><p class="text-center">No projects found!!</p></div>`;
+      return;
+    }
+    // Render project cards
     CardsContainer.innerHTML = list
       .map(
         (p, i) => `
@@ -112,6 +118,17 @@ document.addEventListener("DOMContentLoaded", () => {
       )
       .join("");
   }
+  //FIlTER/SEARCH
+  window.filterProjects = function (keyword) {
+    const filtered = projects.filter((p) => {
+      return (
+        p.projectName.toLowerCase().includes(keyword.toLowerCase()) ||
+        (p.description || "").toLowerCase().includes(keyword.toLowerCase())
+      );
+    });
+
+    renderProjects(filtered);
+  };
 
   // HELPERS
   function getProjects() {
@@ -136,12 +153,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function getTech(prefix = "") {
     const tech = [];
-    if (document.getElementById(`${prefix}Tech1`).checked) tech.push("Node.js");
-    if (document.getElementById(`${prefix}Tech2`).checked)
+
+    if (document.getElementById(`${prefix}tech1`)?.checked)
+      tech.push("Node.js");
+    if (document.getElementById(`${prefix}tech2`)?.checked)
       tech.push("React.js");
-    if (document.getElementById(`${prefix}Tech3`).checked) tech.push("Next.js");
-    if (document.getElementById(`${prefix}Tech4`).checked)
+    if (document.getElementById(`${prefix}tech3`)?.checked)
+      tech.push("Next.js");
+    if (document.getElementById(`${prefix}tech4`)?.checked)
       tech.push("TypeScript");
+
     return tech;
   }
 
